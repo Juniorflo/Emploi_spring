@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">OffresEmplois</string>
+    <string name="motDeBienvenue">Bienvenue sur application d\'offres d\'emplois. Clickez sur les boutons ci-dessous pour voir la liste des cvs déjà enregistrés. \nBonne chance à vous pour la suite !!!</string>
+</resources>

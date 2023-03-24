@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Ce layout lié au SpecialiteActivity définit l'interface pour le choix de la
+    specialité dont les cvs seront affichés.
+    Il définit quatre boutons correspondantes aux différentes spécialite.-->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/teal_700"
+    tools:context=".SpecialiteActivity">
+
+    <!-- Bouton Mathematique -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/speMathsBt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/teal_200"
+        android:text="Mathématique"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imgFindJob"
+        app:layout_constraintBottom_toTopOf="@id/speInfoBt"/>
+
+    <!-- Bouton Informatique -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/speInfoBt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/teal_200"
+        android:text="Informatique"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/speMathsBt"
+        app:layout_constraintBottom_toTopOf="@id/speManageBt"/>
+
+    <!-- Bouton Management -->
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/speManageBt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="1dp"
+        android:background="@color/teal_200"
+        android:text="Management"
+        app:layout_constraintBottom_toTopOf="@id/speTelecomBt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/speInfoBt" />
+
+    <!-- Bouton Telecom -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/speTelecomBt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="50dp"
+        android:background="@color/teal_200"
+        android:text="Telecom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/speManageBt"
+        app:layout_constraintVertical_bias="0.857" />
+
+    <!-- Image find your job -->
+    <ImageView
+        android:id="@+id/imgFindJob"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/speMathsBt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/find_job" />
+
+    <!-- Premier logo ajf se trouvant dans le coin supérieur gauche  -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/ajf_logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <!-- Deuxième logo ajf se trouvant dans le coin inférieur droit -->
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/ajf_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
